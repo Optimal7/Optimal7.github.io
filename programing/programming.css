@@ -1,0 +1,176 @@
+/*Main*/
+body {
+	margin: 0;
+	font-family: Calibri;
+	background-color: #333;
+}
+
+* {
+	transition: 300ms;
+}
+
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+  
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+  
+.navbar a:hover {
+	background-color: #585858;
+	color: white;
+}
+  
+.navbar a.home {
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(124deg, #6aaffc, #316df8, #5F1FD2);
+    background-size: 1000% 1000%;
+    
+    -webkit-animation: rainbow 7s ease infinite;
+    -z-animation: rainbow 7s ease infinite;
+    -o-animation: rainbow 7s ease infinite;
+      animation: rainbow 7s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+
+.navbar .active {
+	font-weight: 600;
+	background-color: #4d4d4d;
+}
+  
+.navbar .icon {
+	display: none;
+}
+  
+@media screen and (max-width: 600px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
+	    float: right;
+	 	display: block;
+	}
+  }
+  
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+  }
+
+.banner {
+	padding: 30px;
+	font-weight: 600;
+	font-family: Arial;
+	background-color: white;
+	color: black;
+	animation: none;
+	text-align: center;
+}
+
+.banner:hover {
+	transition: 300ms;
+	animation: bioanim 3s ease-in-out infinite;
+	text-decoration: underline;
+	background-color: rgb(232, 232, 232);
+}
+
+h1 {
+	font-size: 60px;
+}
+
+.content {
+	color: white;
+	font-family: "Segoe UI";
+	text-align: center;
+	font-size: 18px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+:root {
+	--bioanim1: #6aaffc;
+    --bioanim2: #316df8;
+    --bioanim3: #5F1FD2;
+}
+
+@keyframes bioanim {
+    0% {color: var(--bioanim1)}
+    25% {color: var(--bioanim2)}
+    50% {color: var(--bioanim3)}
+    75% {color: var(--bioanim2)}
+    100% {color: var(--bioanim1)}
+}
+
+.box-container {
+	padding: 40px;
+	color: white;
+	text-align: center;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    width: 200px;
+    margin: 0px 20px 20px 0px;
+    transition: 150ms;
+    display: inline-block;
+}
+
+.box img {
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box:hover {
+	box-shadow: rgb(114 114 114) 0px 0px 50px;
+	transform: translateY(-4px);
+}
+
+.footer {
+	padding: 10px;
+	color: white;
+	font-family: "Segoe UI";
+	background-color: black;
+	padding-left: 40px;
+}

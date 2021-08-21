@@ -10,6 +10,10 @@ html {
 	background-size: cover;
 }
 
+* {
+	transition: 300ms;
+}
+
 h2 {
 	color: white;
 	font-family: Calibri;
@@ -47,12 +51,20 @@ a:hover {
 	
 }
 
-.social {
+.socialCon {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
+}
+
+
+.social {
 	filter: drop-shadow(5px 5px 4px rgb(0, 0, 0, 0.3));
+}
+
+.social:hover {
+	transform: translateY(-4px);
 }
 
 /*Card*/
@@ -72,7 +84,6 @@ a:hover {
 
 .card:hover {
 	background-color: rgba(255,255,255,.7);
-	transition-duration: 160ms;
 }
 
 .credit {
@@ -80,3 +91,30 @@ a:hover {
 	right: 0;
 	position: fixed;
 }
+
+/*Buttons*/
+.button {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 8px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.4);
+	backdrop-filter: blur(10px);
+	border-radius: .25rem;
+	margin-top: 20px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.button:hover {
+	background-color: rgba(255,255,255,.7);
+	text-decoration: none;
+}
+
+.butContain {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+
+

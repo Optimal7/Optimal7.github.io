@@ -1,6 +1,5 @@
 # My Website
-As if anyone is going to read this, anyway.
+As if anyone will actually decided to read this.
 
-This is my website, recently decided to make the code for it Open-Source. So enjoy my messy code.
-
-You can view the website here: https://optimal7.github.io
+This is the full source code for my Website, decided to make this Open-Source a while ago.
+The Website can be viewed here: https://optimal7.github.io/
